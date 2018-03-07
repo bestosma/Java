@@ -20,8 +20,6 @@ public class Task3_v3 {
         }
     }
 
-
-
     public static boolean isPalindrome(int number) {
                 int palindrome = number;
                 int reverse = 0;
