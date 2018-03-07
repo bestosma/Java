@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Palindrome {
+
+    public static void main(String[] args) {
+        System.out.println("Введите пятизначное число:");
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        int reverse = 0;
+
+        if (a < 10000){
+            System.out.println("Вы ошиблись. Необходимо ввести пятизначное число!");
+        }
+        if (a > 99999){
+            System.out.println("Вы ошиблись. Необходимо ввести пятизначное число!");
+        }
+        else {
+            while (a != 0)
+            {
+                reverse = reverse * 10;
+                reverse = reverse + a%10;
+                a = a/10;
+            }
+
+            if (a%reverse == 0) {
+            System.out.println("Это число - палиндром.");
+            }
+            else {
+            System.out.println("Это число - НЕ палиндром.");
+            }
+
+
+        }
+    }
+}
