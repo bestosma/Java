@@ -8,7 +8,8 @@ public class Task3_v3 {
         int palindrome = new Scanner(System.in).nextInt();
 
         /*
-         * Тут надо вписать проверку, что palindrome - это число, и что 9999 < palindrome < 100000, в противном случае - выдавать ошибку.
+         * Тут надо вписать проверку, что palindrome - это число, и что 9999 < palindrome < 100000,
+         * в противном случае - выдавать ошибку.
          */
 
 
