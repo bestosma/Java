@@ -7,36 +7,36 @@ public class Task3_v3 {
         System.out.println("Введите пятизначное число:");
         int palindrome = new Scanner(System.in).nextInt();
 
-        /*
-         * Тут надо вписать проверку, что palindrome - это число, и что 9999 < palindrome < 100000,
-         * в противном случае - выдавать ошибку.
-         */
 
+        if (palindrome>9999 && palindrome<100000)
 
-        if(isPalindrome(palindrome)){
+            if(isPalindrome(palindrome)){
             System.out.println("Это число - палиндром");
-        }else{
+            }else{
             System.out.println("Это число - НЕ палиндром");
+            }
+        else {
+            System.out.println("Не пятизначное число");
         }
-
     }
+
+
 
     public static boolean isPalindrome(int number) {
-        int palindrome = number;
-        int reverse = 0;
+                int palindrome = number;
+                int reverse = 0;
 
-        while (palindrome != 0) {
-            int remainder = palindrome % 10;
-            reverse = reverse * 10 + remainder;
-            palindrome = palindrome / 10;
-        }
+                while (palindrome != 0) {
+                    int remainder = palindrome % 10;
+                    reverse = reverse * 10 + remainder;
+                    palindrome = palindrome / 10;
+                }
 
-        if (number == reverse) {
-            return true;
-        }
-        return false;
+                if (number == reverse) {
+                    return true;
+                }
+                return false;
     }
-
 
 }
 
